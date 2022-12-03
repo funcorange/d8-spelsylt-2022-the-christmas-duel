@@ -9,7 +9,7 @@
     {"id":{"name":"spr_gameManager","path":"sprites/spr_gameManager/spr_gameManager.yy",},"order":0,},
     {"id":{"name":"rm_setup","path":"rooms/rm_setup/rm_setup.yy",},"order":1,},
     {"id":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -26,7 +26,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_setup","path":"rooms/rm_setup/rm_setup.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},

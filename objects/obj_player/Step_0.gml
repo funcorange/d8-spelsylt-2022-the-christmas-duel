@@ -1,6 +1,5 @@
 /// @description Player step
 
-var _deltaTime = global.deltaTime;
 var _movementKeyCount = 4;
 
 #region Input
@@ -46,10 +45,12 @@ _moveDirY = _moveInputY * _moveInputLengthReciprocal;
 
 // Calculate movement vector
 var _moveX, _moveY;	// Final movement amount
-_moveX = _moveDirX * _deltaTime * 256;
-_moveY = _moveDirY * _deltaTime * 256;
+_moveX = _moveDirX * 256;
+_moveY = _moveDirY * 256;
+
+xVelocity = _moveX;
+yVelocity = _moveY;
 
 // Move
-x += _moveX;
-y += _moveY;
+Move();
 #endregion

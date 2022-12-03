@@ -4,6 +4,8 @@
   "name": "the-christmas-duel",
   "resources": [
     {"id":{"name":"InitialiseGlobalVars","path":"scripts/InitialiseGlobalVars/InitialiseGlobalVars.yy",},"order":0,},
+    {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"order":2,},
+    {"id":{"name":"Move","path":"scripts/Move/Move.yy",},"order":1,},
     {"id":{"name":"spr_santa","path":"sprites/spr_santa/spr_santa.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_gameManager","path":"sprites/spr_gameManager/spr_gameManager.yy",},"order":0,},

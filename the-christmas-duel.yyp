@@ -29,6 +29,7 @@
     {"id":{"name":"spr_trees","path":"sprites/spr_trees/spr_trees.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_gameManager","path":"sprites/spr_gameManager/spr_gameManager.yy",},"order":0,},
+    {"id":{"name":"MoveCharacter","path":"scripts/MoveCharacter/MoveCharacter.yy",},"order":6,},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":1,},
     {"id":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},"order":1,},
   ],

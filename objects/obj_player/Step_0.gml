@@ -18,10 +18,24 @@ if (mouse_check_button_pressed(mb_left))
 else if (mouse_check_button_released(mb_left))
 	inFire = false;
 
+// Sprint input
+if (keyboard_check_pressed(sprintKey))
+	inSprint = true;
+else if (keyboard_check_released(sprintKey))
+	inSprint = false;
+
 #endregion
 
 #region Movement
 var _moveInputX = 0, _moveInputY = 0;	// Direction of movement input key presses
+
+var _moveSpeed;
+if (inSprint)
+	_moveSpeed = sprintSpeed;
+else
+	_moveSpeed = walkSpeed;
+
+maxSpeed = _moveSpeed;
 
 // Check movement input
 for (var _i = 0; _i < _movementKeyCount; _i++)
@@ -35,7 +49,8 @@ for (var _i = 0; _i < _movementKeyCount; _i++)
 }
 
 var _moveInputLength = point_distance(0, 0, _moveInputX, _moveInputY);
-if (_moveInputLength > 0)
+var _speed = point_distance(0, 0, xVelocity, yVelocity);
+if (_moveInputLength > 0 && _speed < _moveSpeed)
 {
 	// Calculate normalised movement direction
 	var _moveInputLengthReciprocal = 1 / _moveInputLength;
@@ -46,7 +61,7 @@ if (_moveInputLength > 0)
 	
 	// Calculate movement vector
 	var _moveX, _moveY;	// Final movement amount
-	var _acceleration = 8 * maxSpeed; // Amount to accelerate
+	var _acceleration = 8 * walkSpeed; // Amount to accelerate
 	_moveX = _moveDirX * _acceleration;
 	_moveY = _moveDirY * _acceleration;
 	
@@ -55,13 +70,12 @@ if (_moveInputLength > 0)
 }
 else
 {
-	var _speed = point_distance(0, 0, xVelocity, yVelocity);
 	if (_speed > 0)
 	{
 		var _speedReciprocal = 1 / _speed;
 	
 		// Calculate decceleration amount
-		var _decceleration = 8 * maxSpeed;
+		var _decceleration = 8 * walkSpeed;
 		var _deccelX = -xVelocity * _speedReciprocal * _decceleration;
 		var _deccelY = -yVelocity * _speedReciprocal * _decceleration;
 	

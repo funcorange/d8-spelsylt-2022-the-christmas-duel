@@ -93,8 +93,8 @@ Move();
 
 if (instance_exists(weapon))
 {
-	weapon.x = x + 64;
-	weapon.y = y + 64;
+	weapon.x = x;
+	weapon.y = y;
 	
 	var _aimDir = point_direction(weapon.x, weapon.y, mouse_x, mouse_y);
 	weapon.image_angle = _aimDir;

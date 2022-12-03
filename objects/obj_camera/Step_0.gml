@@ -18,8 +18,8 @@ var _player = global.player;
 // Get player position
 if (instance_exists(_player))
 {
-	_targetX = _player.x + 64 - _cameraWidth / 2;
-	_targetY = _player.y + 64 - _cameraHeight / 2;
+	_targetX = _player.x - _cameraWidth / 2;
+	_targetY = _player.y - _cameraHeight / 2;
 }
 
 // Calculate camera offset

@@ -10,7 +10,6 @@ if (firing && _time > nextFireTime)
 	
 	for (var _i = 0; _i < shotCount; _i++)
 	{
-		
 		var _bullet = instance_create_layer(x, y, "Bullets", obj_bullet);
 		var _bulletAngle = image_angle - spreadAngle / 2 + _i * spreadAngle / shotCount + random_range(-_bulletSpread / 2, _bulletSpread / 2);
 	

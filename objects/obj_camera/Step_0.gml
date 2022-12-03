@@ -10,21 +10,30 @@ var _cameraHeight =	cameraHeight;
 var _cameraWidth =	_cameraHeight * _aspect;
 
 #region Movement
-// Update camera position
+
 var _targetX = x;
 var _targetY = y;
 var _player = global.player;
 
+// Get player position
 if (instance_exists(_player))
 {
 	_targetX = _player.x + 64 - _cameraWidth / 2;
 	_targetY = _player.y + 64 - _cameraHeight / 2;
 }
 
+// Calculate camera offset
+var _normalisedMousePositionX = 2 * window_mouse_get_x() / window_get_width() - 1;
+var _normalisedMousePositionY = 2 * window_mouse_get_y() / window_get_height() - 1;
+var _viewWidth = 6 * view_wport[0] / 8;
+var _viewHeight = 6 * view_hport[0] / 8;
+_targetX += _normalisedMousePositionX * _viewWidth / 2;
+_targetY += _normalisedMousePositionY * _viewHeight / 2;
+
 var _xDist = _targetX - x;
 var _yDist = _targetY - y;
 
-// Move camera toweards target
+// Move camera towards target
 if (abs(_xDist) > 0 && abs(_yDist) > 0)
 {
 	var _xVel = _xDist * 2;

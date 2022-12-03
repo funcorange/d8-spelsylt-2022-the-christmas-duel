@@ -16,7 +16,7 @@ if (firing && _time > nextFireTime)
 		_bullet.image_angle = _bulletAngle;
 		_bullet.xVelocity = lengthdir_x(_bulletSpeed, _bulletAngle);
 		_bullet.yVelocity = lengthdir_y(_bulletSpeed, _bulletAngle);
-		_bullet.deathTime = _time + 1;
+		_bullet.deathTime = _time + 0.5;
 	}
 	
 	nextFireTime = _time + 0.5;

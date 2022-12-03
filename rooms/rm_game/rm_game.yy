@@ -23,7 +23,15 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Weapons","instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Camera","instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_snow","path":"sprites/spr_snow/spr_snow.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Trees","effectType":null,"visible":true,"hierarchyFrozen":false,"tilesetId":{"name":"ts_trees","path":"tilesets/ts_trees/ts_trees.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":34,"SerialiseHeight":34,"TileCompressedData":[
+-35,1,1,0,-15,-2147483648,1,0,-15,-2147483648,-2,1,-16,-2147483648,1,0,-15,-2147483648,-2,1,-7,-2147483648,-2,0,-7,-2147483648,1,0,-15,-2147483648,-2,1,-16,-2147483648,
+-2,0,-14,-2147483648,-2,1,-16,-2147483648,-2,0,-14,-2147483648,-2,1,-16,-2147483648,-2,0,-14,-2147483648,-2,1,-16,-2147483648,-2,0,-14,-2147483648,-2,1,-16,-2147483648,-2,0,
+-14,-2147483648,-2,1,-16,-2147483648,1,0,-15,-2147483648,-2,1,-16,-2147483648,1,0,-3,-2147483648,-2,0,-10,-2147483648,-2,1,-16,-2147483648,5,0,-2147483648,-2147483648,0,0,-11,-2147483648,
+-2,1,-16,-2147483648,3,0,-2147483648,0,-13,-2147483648,-2,1,-16,-2147483648,-2,0,-14,-2147483648,-2,1,-15,-2147483648,-2,0,-15,-2147483648,-2,1,-15,-2147483648,-2,0,-15,-2147483648,
+-2,1,-16,-2147483648,1,0,-15,-2147483648,-2,1,-17,0,-15,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,
+-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,-32,-2147483648,-2,1,
+-32,-2147483648,-2,1,-32,-2147483648,-35,1,],},"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"effectEnabled":true,"properties":[],},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_snow","path":"sprites/spr_snow/spr_snow.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
   "creationCodeFile": "",
@@ -35,8 +43,8 @@
   "sequenceId": null,
   "roomSettings": {
     "inheritRoomSettings": false,
-    "Width": 1920,
-    "Height": 1080,
+    "Width": 4352,
+    "Height": 4352,
     "persistent": false,
   },
   "viewSettings": {

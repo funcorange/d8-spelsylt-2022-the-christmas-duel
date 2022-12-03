@@ -4,7 +4,7 @@ var _deltaTime = global.deltaTime;
 
 // Calculate camera variables
 var _camera = view_get_camera(0);
-var _aspect = window_get_width() / window_get_height();
+var _aspect = view_get_wport(0) / view_get_hport(0);
 
 var _cameraHeight =	cameraHeight;
 var _cameraWidth =	_cameraHeight * _aspect;
@@ -25,8 +25,8 @@ if (instance_exists(_player))
 // Calculate camera offset
 var _normalisedMousePositionX = 2 * window_mouse_get_x() / window_get_width() - 1;
 var _normalisedMousePositionY = 2 * window_mouse_get_y() / window_get_height() - 1;
-var _viewWidth = 6 * view_wport[0] / 8;
-var _viewHeight = 6 * view_hport[0] / 8;
+var _viewWidth = 6 * _cameraWidth / 8;
+var _viewHeight = 6 * _cameraHeight / 8;
 _targetX += _normalisedMousePositionX * _viewWidth / 2;
 _targetY += _normalisedMousePositionY * _viewHeight / 2;
 

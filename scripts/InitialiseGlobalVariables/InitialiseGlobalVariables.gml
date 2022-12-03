@@ -5,6 +5,7 @@ function InitialiseGlobalVariables()
 	// Game
 	global.player = noone;
 	global.camera = noone;
+	global.hud = noone;
 	
 	// Time
 	global.time				= 0;

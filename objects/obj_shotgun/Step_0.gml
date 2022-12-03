@@ -20,5 +20,5 @@ if (firing && _time > nextFireTime)
 		_bullet.deathTime = _time + 0.33;
 	}
 	
-	nextFireTime = _time + 0.5;
+	nextFireTime = _time + 1;
 }

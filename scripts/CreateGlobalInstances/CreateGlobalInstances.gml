@@ -6,5 +6,8 @@ function CreateGlobalInstances()
 		"Player",
 		obj_player
 	);
+	
 	global.camera = instance_create_layer(32, 0, "Camera", obj_camera);
+	
+	global.hud = instance_create_layer(32, 0, "Logic", obj_hud);
 }

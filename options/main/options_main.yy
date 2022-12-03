@@ -10,7 +10,7 @@
   "option_window_colour": 255,
   "option_steam_app_id": "0",
   "option_sci_usesci": true,
-  "option_author": "",
+  "option_author": "funcorange",
   "option_collision_compatibility": false,
   "option_copy_on_write_enabled": false,
   "option_spine_licence": false,

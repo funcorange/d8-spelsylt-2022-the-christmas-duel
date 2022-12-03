@@ -11,3 +11,5 @@ collisionFunction = function(_other)
 	
 	instance_destroy(self, true);
 }
+
+image_blend = c_yellow;

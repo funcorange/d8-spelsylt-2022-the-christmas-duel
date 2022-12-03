@@ -16,6 +16,7 @@
     {"id":{"name":"obj_shotgun","path":"objects/obj_shotgun/obj_shotgun.yy",},"order":4,},
     {"id":{"name":"obj_grenade","path":"objects/obj_grenade/obj_grenade.yy",},"order":12,},
     {"id":{"name":"spr_camera","path":"sprites/spr_camera/spr_camera.yy",},"order":1,},
+    {"id":{"name":"obj_base_character","path":"objects/obj_base_character/obj_base_character.yy",},"order":15,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"obj_base_cover","path":"objects/obj_base_cover/obj_base_cover.yy",},"order":14,},
     {"id":{"name":"ts_trees","path":"tilesets/ts_trees/ts_trees.yy",},"order":0,},

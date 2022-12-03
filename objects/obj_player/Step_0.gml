@@ -34,23 +34,43 @@ for (var _i = 0; _i < _movementKeyCount; _i++)
 	}
 }
 
-// Calculate normalised movement direction
 var _moveInputLength = point_distance(0, 0, _moveInputX, _moveInputY);
-var _moveInputLengthReciprocal = 0;
 if (_moveInputLength > 0)
-	_moveInputLengthReciprocal = 1 / _moveInputLength;
-var _moveDirX, _moveDirY;
-_moveDirX = _moveInputX * _moveInputLengthReciprocal; 
-_moveDirY = _moveInputY * _moveInputLengthReciprocal; 
-
-// Calculate movement vector
-var _moveX, _moveY;	// Final movement amount
-_moveX = _moveDirX * 256;
-_moveY = _moveDirY * 256;
-
-xVelocity = _moveX;
-yVelocity = _moveY;
+{
+	// Calculate normalised movement direction
+	var _moveInputLengthReciprocal = 1 / _moveInputLength;
+	
+	var _moveDirX, _moveDirY;
+	_moveDirX = _moveInputX * _moveInputLengthReciprocal;
+	_moveDirY = _moveInputY * _moveInputLengthReciprocal;
+	
+	// Calculate movement vector
+	var _moveX, _moveY;	// Final movement amount
+	var _acceleration = 8 * maxSpeed; // Amount to accelerate
+	_moveX = _moveDirX * _acceleration;
+	_moveY = _moveDirY * _acceleration;
+	
+	// Apply acceleration
+	Accelerate(_moveX, _moveY);
+}
+else
+{
+	var _speed = point_distance(0, 0, xVelocity, yVelocity);
+	if (_speed > 0)
+	{
+		var _speedReciprocal = 1 / _speed;
+	
+		// Calculate decceleration amount
+		var _decceleration = 8 * maxSpeed;
+		var _deccelX = -xVelocity * _speedReciprocal * _decceleration;
+		var _deccelY = -yVelocity * _speedReciprocal * _decceleration;
+	
+		// Apply decceleration
+		Deccelerate(_deccelX, _deccelY);
+	}
+}
 
 // Move
 Move();
+
 #endregion

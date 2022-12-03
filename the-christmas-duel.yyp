@@ -3,6 +3,8 @@
   "resourceVersion": "1.6",
   "name": "the-christmas-duel",
   "resources": [
+    {"id":{"name":"Deccelerate","path":"scripts/Deccelerate/Deccelerate.yy",},"order":3,},
+    {"id":{"name":"Accelerate","path":"scripts/Accelerate/Accelerate.yy",},"order":2,},
     {"id":{"name":"InitialiseGlobalVars","path":"scripts/InitialiseGlobalVars/InitialiseGlobalVars.yy",},"order":0,},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"order":2,},
     {"id":{"name":"Move","path":"scripts/Move/Move.yy",},"order":1,},

@@ -23,12 +23,18 @@ if (instance_exists(_player))
 }
 
 // Calculate camera offset
-var _normalisedMousePositionX = 2 * window_mouse_get_x() / window_get_width() - 1;
-var _normalisedMousePositionY = 2 * window_mouse_get_y() / window_get_height() - 1;
-var _viewWidth = 6 * _cameraWidth / 8;
-var _viewHeight = 6 * _cameraHeight / 8;
-_targetX += _normalisedMousePositionX * _viewWidth / 2;
-_targetY += _normalisedMousePositionY * _viewHeight / 2;
+var _windowWidth = window_get_width();
+var _windowHeight = window_get_height();
+
+if (_windowWidth > 0 && _windowHeight > 0)
+{
+	var _normalisedMousePositionX = 2 * window_mouse_get_x() / _windowWidth - 1;
+	var _normalisedMousePositionY = 2 * window_mouse_get_y() / _windowHeight - 1;
+	var _viewWidth = 6 * _cameraWidth / 8;
+	var _viewHeight = 6 * _cameraHeight / 8;
+	_targetX += _normalisedMousePositionX * _viewWidth / 2;
+	_targetY += _normalisedMousePositionY * _viewHeight / 2;
+}
 
 var _xDist = _targetX - x;
 var _yDist = _targetY - y;

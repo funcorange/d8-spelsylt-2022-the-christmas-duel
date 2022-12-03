@@ -35,6 +35,10 @@ if (inSprint)
 else
 	_moveSpeed = walkSpeed;
 
+
+if (instance_exists(weapon))
+	_moveSpeed *= weapon.moveSpeedScale;
+
 maxSpeed = _moveSpeed;
 
 // Check movement input

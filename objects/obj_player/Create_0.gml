@@ -1,4 +1,5 @@
 /// @description Player initialisation
+event_inherited();
 
 // Initialise instance variables
 // Input variables

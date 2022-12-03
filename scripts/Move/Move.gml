@@ -64,7 +64,10 @@ function Move()
 			//		break;
 			//	}
 			//}
-				
+			
+			var _collisionInstance = instance_place(_testX, _testY, obj_base);
+			collisionFunction(_collisionInstance);
+			
 			break;
 		}
 		

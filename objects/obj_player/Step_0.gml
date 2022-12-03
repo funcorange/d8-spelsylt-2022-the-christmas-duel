@@ -1,20 +1,25 @@
 /// @description Player step
 
+var _deltaTime = global.deltaTime;
+
 // Movement
-var moveX = 0, moveY = 0;
-var movementKeyCount = array_length(movementKeys);
+var _moveDirX = 0, _moveDirY = 0, _moveX = 0, _moveY = 0;
+var _movementKeyCount = array_length(movementKeys);
 
 // Check pressed movement keys
-for (var i = 0; i < movementKeyCount; i++)
+for (var _i = 0; _i < _movementKeyCount; _i++)
 {
-	if (keyboard_check(movementKeys[i]))
+	if (keyboard_check(movementKeys[_i]))
 	{
 		// Add movement direction for this key
-		moveX += cos(i * pi / 2);
-		moveY -= sin(i * pi / 2);	// Positive y is down
+		_moveDirX += cos(_i * pi / 2);
+		_moveDirY -= sin(_i * pi / 2);	// Positive y is down
 	}
 }
 
+_moveX = _moveDirX * _deltaTime * 256;
+_moveY = _moveDirY * _deltaTime * 256;
+
 // Move
-x += moveX;
-y += moveY;
+x += _moveX;
+y += _moveY;

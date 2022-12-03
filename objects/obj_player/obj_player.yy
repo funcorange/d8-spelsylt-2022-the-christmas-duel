@@ -40,6 +40,9 @@
   ],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxSpeed","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"256",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"takeDamage","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"100",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"isCharacter","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Objects",

@@ -24,6 +24,7 @@
     {"id":{"name":"CheckCollision","path":"scripts/CheckCollision/CheckCollision.yy",},"order":7,},
     {"id":{"name":"Accelerate","path":"scripts/Accelerate/Accelerate.yy",},"order":2,},
     {"id":{"name":"InitialiseGlobalVariables","path":"scripts/InitialiseGlobalVariables/InitialiseGlobalVariables.yy",},"order":0,},
+    {"id":{"name":"TakeDamage","path":"scripts/TakeDamage/TakeDamage.yy",},"order":9,},
     {"id":{"name":"spr_minigun","path":"sprites/spr_minigun/spr_minigun.yy",},"order":2,},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"order":2,},
     {"id":{"name":"obj_player_start","path":"objects/obj_player_start/obj_player_start.yy",},"order":8,},

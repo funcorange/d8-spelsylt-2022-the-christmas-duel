@@ -30,6 +30,7 @@ if (firing)
 			_bullet.xVelocity = lengthdir_x(_bulletSpeed, _bulletDirection);
 			_bullet.yVelocity = lengthdir_y(_bulletSpeed, _bulletDirection);
 			_bullet.deathTime = _time + 1;
+			_bullet.owner = owner;
 	
 			nextFireTime = _time + 0.05;
 		}

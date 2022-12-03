@@ -34,7 +34,12 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"weapon","varType":0,"value":"noone","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"takeDamage","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"200",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"isCharacter","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"damageFlashDuration","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"0.15",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

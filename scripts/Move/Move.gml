@@ -28,23 +28,26 @@ function Move()
 		
 		if (CheckCollision(_testX, _testY))
 		{
-			var _maxSlideAngle = 89;
-				
-			for (var _angle = 5; _angle <= _maxSlideAngle; _angle += 5)
+			if (isCharacter)
 			{
-				for (var _dir = -1; _dir <= 1; _dir += 2)
+				var _maxSlideAngle = 89;
+				
+				for (var _angle = 5; _angle <= _maxSlideAngle; _angle += 5)
 				{
-					var _testDist = point_distance(_targetX, _targetY, _testX, _testY);
-					var _testDir = _moveDirection + _dir * _angle;
-					_testX = _targetX + lengthdir_x(_testDist, _testDir);
-					_testY = _targetY + lengthdir_y(_testDist, _testDir);
-						
-					if (!CheckCollision(_testX, _testY))
+					for (var _dir = -1; _dir <= 1; _dir += 2)
 					{
-						_targetX = _testX;
-						_targetY = _testY;
-						_foundFree = true;
-						break;
+						var _testDist = point_distance(_targetX, _targetY, _testX, _testY);
+						var _testDir = _moveDirection + _dir * _angle;
+						_testX = _targetX + lengthdir_x(_testDist, _testDir);
+						_testY = _targetY + lengthdir_y(_testDist, _testDir);
+						
+						if (!CheckCollision(_testX, _testY))
+						{
+							_targetX = _testX;
+							_targetY = _testY;
+							_foundFree = true;
+							break;
+						}
 					}
 				}
 			}

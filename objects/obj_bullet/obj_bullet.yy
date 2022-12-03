@@ -34,7 +34,9 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"deathTime","varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"collideWithCharacter","path":"objects/obj_base/obj_base.yy",},"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"value":"True",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

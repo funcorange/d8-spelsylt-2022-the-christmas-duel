@@ -74,3 +74,18 @@ else
 Move();
 
 #endregion
+
+#region Weapon
+
+if (instance_exists(weapon))
+{
+	weapon.x = x + 64;
+	weapon.y = y + 64;
+	
+	var _aimDir = point_direction(weapon.x, weapon.y, mouse_x, mouse_y);
+	weapon.image_angle = _aimDir;
+	
+	weapon.firing = inFire;
+}
+
+#endregion

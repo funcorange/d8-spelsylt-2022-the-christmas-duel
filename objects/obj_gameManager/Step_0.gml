@@ -1,11 +1,5 @@
 /// @description Game step
 
-// Update splash
-if (room == rm_setup)
-{
-	room_goto(rm_battle);
-}
-
 // Update time
 var _realDeltaTime = delta_time / 1000000;
 var _deltaTime = _realDeltaTime;

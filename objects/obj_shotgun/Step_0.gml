@@ -19,6 +19,10 @@ if (firing && _time > nextFireTime)
 		_bullet.yVelocity = lengthdir_y(_bulletSpeed, _bulletAngle);
 		_bullet.deathTime = _time + 0.33;
 		_bullet.owner = owner;
+		_bullet.damage = 3;
+		
+		
+		
 	}
 	
 	nextFireTime = _time + 1;

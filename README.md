@@ -31,6 +31,23 @@ Det finns tre vapen, minigun, hagelgevär och granatkastare. Alla tre vapnen har
 olika fördelar och nackdelar. Du får välja vapen först och den sluga Atnas
 väljer alltid det vapen som har övertaget mot dig.
 
+### Anti-symmetri
+Spelet är asymmetriskt genom att vapnena har olika fördelar och nackdelar på
+ett sätt som påminner om sten, sax, påse.
+
+Minigun skjuter snabbt och har lång räckvidd, vilket ger den ett övertag mot
+hagelgeväret, men saktar ner dig vilket gör dig sårbar för granatgeväret.
+
+Hagelgeväret skjuter skott med stor spridning, vilket gör det användbart i
+närstrid, vilket är granatgevärets svaghet, men gör det svårare att skada
+minigun.
+
+Slutligen kan granatgeväret skjuta över skydd men granaterna är långsamma,
+vilket gör det lätt att träffa en långsam minigunanvändare, men svårare att
+träffa någon som använder hagelgeväret.
+
+Atnas har också mycket mer hälsa och är snabbare än tomten.
+
 ## Third party
 Gjord med Gamemaker Studio 2.
 

@@ -31,7 +31,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"minDistance","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"objectId":{"name":"obj_base_weapon","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"value":"1024",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxDistance","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"objectId":{"name":"obj_base_weapon","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"value":"1536",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_atnas",
   "spriteId": {
-    "name": "spr_santa",
-    "path": "sprites/spr_santa/spr_santa.yy",
+    "name": "spr_atnas",
+    "path": "sprites/spr_atnas/spr_atnas.yy",
   },
   "solid": false,
   "visible": true,

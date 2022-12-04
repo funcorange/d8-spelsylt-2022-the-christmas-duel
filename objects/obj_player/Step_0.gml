@@ -85,6 +85,11 @@ if (instance_exists(weapon))
 	
 	weapon.aimX = mouse_x;
 	weapon.aimY = mouse_y;
+	
+	if (mouse_x < x)
+		weapon.image_yscale = -1;
+	else
+		weapon.image_yscale = 1;
 }
 
 #endregion

@@ -82,6 +82,9 @@ if (instance_exists(weapon))
 	weapon.image_angle = _aimDir;
 	
 	weapon.firing = inFire;
+	
+	weapon.aimX = mouse_x;
+	weapon.aimY = mouse_y;
 }
 
 #endregion

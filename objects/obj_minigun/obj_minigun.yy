@@ -37,7 +37,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"slowTime","varType":0,"value":"1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spinUpMoveScale","varType":0,"value":"0.25","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"minDistance","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"objectId":{"name":"obj_base_weapon","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"value":"1024",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxDistance","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"objectId":{"name":"obj_base_weapon","path":"objects/obj_base_weapon/obj_base_weapon.yy",},"value":"2048",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",

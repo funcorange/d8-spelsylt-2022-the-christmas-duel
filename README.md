@@ -48,6 +48,9 @@ träffa någon som använder hagelgeväret.
 
 Atnas har också mycket mer hälsa och är snabbare än tomten.
 
+### Utmaning
+Besegra Atnas med minigun. Jag har inte hittat något sätt att göra det på än.
+
 ## Third party
 Gjord med Gamemaker Studio 2.
 

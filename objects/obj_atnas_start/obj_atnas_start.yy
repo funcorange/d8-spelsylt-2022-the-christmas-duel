@@ -1,14 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hud",
-  "spriteId": null,
+  "name": "obj_atnas_start",
+  "spriteId": {
+    "name": "spr_atnas",
+    "path": "sprites/spr_atnas/spr_atnas.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_base",
+    "path": "objects/obj_base/obj_base.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,13 +29,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"state","varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",

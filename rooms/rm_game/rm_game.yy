@@ -19,13 +19,12 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Logic","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76454410","properties":[],"isDnd":false,"objectId":{"name":"obj_gameManager","path":"objects/obj_gameManager/obj_gameManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E6DFB70","properties":[],"isDnd":false,"objectId":{"name":"obj_player_start","path":"objects/obj_player_start/obj_player_start.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":1152.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A1A37E5","properties":[],"isDnd":false,"objectId":{"name":"obj_atnas_start","path":"objects/obj_atnas_start/obj_atnas_start.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3200.0,"y":3200.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":128,"gridY":128,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Bullets","instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Weapons","instances":[],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Atnas","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3846E5CF","properties":[],"isDnd":false,"objectId":{"name":"obj_atnas","path":"objects/obj_atnas/obj_atnas.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3200.0,"y":3200.0,},
-      ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":128,"gridY":128,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Atnas","instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":128,"gridY":128,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Cover","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2CFA1BD6","properties":[],"isDnd":false,"objectId":{"name":"obj_rock1","path":"objects/obj_rock1/obj_rock1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.75,"scaleY":1.25,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2896.0,"y":1616.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49027F86","properties":[],"isDnd":false,"objectId":{"name":"obj_rock1","path":"objects/obj_rock1/obj_rock1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-2.0,"scaleY":2.75,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":928.0,"y":2576.0,},
@@ -55,7 +54,6 @@
   "instanceCreationOrder": [
     {"name":"inst_76454410","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_4E6DFB70","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_3846E5CF","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_2CFA1BD6","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_49027F86","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_33B0EBDC","path":"rooms/rm_game/rm_game.yy",},
@@ -66,6 +64,7 @@
     {"name":"inst_6D27FAFA","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_38D18B6B","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_60F59334","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4A1A37E5","path":"rooms/rm_game/rm_game.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

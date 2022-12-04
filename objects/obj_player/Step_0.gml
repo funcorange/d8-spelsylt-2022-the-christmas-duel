@@ -3,26 +3,29 @@
 var _movementKeyCount = 4;
 
 #region Input
-// Movement input
-for (var _i = 0; _i < _movementKeyCount; _i++)
+if (!disableControl)
 {
-	if (keyboard_check_pressed(movementKeys[_i]))
-		inMovement[_i] = true;
-	else if (keyboard_check_released(movementKeys[_i]))
-		inMovement[_i] = false;
-}
+	// Movement input
+	for (var _i = 0; _i < _movementKeyCount; _i++)
+	{
+		if (keyboard_check_pressed(movementKeys[_i]))
+			inMovement[_i] = true;
+		else if (keyboard_check_released(movementKeys[_i]))
+			inMovement[_i] = false;
+	}
 	
-// Fire input
-if (mouse_check_button_pressed(mb_left))
-	inFire = true;
-else if (mouse_check_button_released(mb_left))
-	inFire = false;
+	// Fire input
+	if (mouse_check_button_pressed(mb_left))
+		inFire = true;
+	else if (mouse_check_button_released(mb_left))
+		inFire = false;
 
-// Sprint input
-if (keyboard_check_pressed(sprintKey))
-	inSprint = true;
-else if (keyboard_check_released(sprintKey))
-	inSprint = false;
+	// Sprint input
+	if (keyboard_check_pressed(sprintKey))
+		inSprint = true;
+	else if (keyboard_check_released(sprintKey))
+		inSprint = false;
+}
 
 #endregion
 

@@ -2,3 +2,5 @@
 collisionFunction = function(_other)
 {
 }
+
+onTakeDamage = function() { }

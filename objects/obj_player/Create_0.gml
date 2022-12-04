@@ -17,3 +17,19 @@ movementKeys[2] = ord("A")
 movementKeys[1] = ord("W")
 movementKeys[0] = ord("D")
 sprintKey		= vk_shift;
+
+onTakeDamage = function()
+{
+	if (hp > 0)
+		global.hud.playerHealthFraction = hp / 100;
+	else
+		global.hud.playerHealthFraction = 0;
+	
+	if (dead)
+	{
+		takeDamage = false;
+		isCharacter = false;
+		disableControl = true;
+		global.hud.state = hudState.HUD_STATE_LOSE;
+	}
+}

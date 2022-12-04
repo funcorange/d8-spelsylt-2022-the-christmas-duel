@@ -70,6 +70,13 @@ if (_moveInputLength > 0)
 }
 
 var _acceleration = walkSpeed * 8;
+
+if (dead)
+{
+	_moveDirX = 0;
+	_moveDirY = 0;
+}
+
 MoveCharacter(_moveDirX, _moveDirY, _acceleration, _acceleration);
 
 #endregion
@@ -81,18 +88,25 @@ if (instance_exists(weapon))
 	weapon.x = x;
 	weapon.y = y;
 	
-	var _aimDir = point_direction(weapon.x, weapon.y, mouse_x, mouse_y);
-	weapon.image_angle = _aimDir;
+	if (!dead)
+	{
+		var _aimDir = point_direction(weapon.x, weapon.y, mouse_x, mouse_y);
+		weapon.image_angle = _aimDir;
 	
-	weapon.firing = inFire;
+		weapon.firing = inFire;
 	
-	weapon.aimX = mouse_x;
-	weapon.aimY = mouse_y;
+		weapon.aimX = mouse_x;
+		weapon.aimY = mouse_y;
 	
-	if (mouse_x < x)
-		weapon.image_yscale = -1;
+		if (mouse_x < x)
+			weapon.image_yscale = -1;
+		else
+			weapon.image_yscale = 1;
+	}
 	else
-		weapon.image_yscale = 1;
+	{
+		weapon.firing = false;
+	}
 }
 
 #endregion

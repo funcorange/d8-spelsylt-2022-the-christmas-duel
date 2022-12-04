@@ -10,4 +10,6 @@ function TakeDamage(_amount)
 	
 	if (hp <= 0 && !dead)
 		dead = true;
+		
+	onTakeDamage();
 }
